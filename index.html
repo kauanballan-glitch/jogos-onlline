@@ -71,3 +71,27 @@
     <script src="script.js"></script>
 </body>
 </html>
+<section id="catalogo" class="container">
+    <h2 class="section-title">Catálogo de Jogos</h2>
+    
+    <div class="catalog-controls">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="rpg">RPG</button>
+            <button class="filter-btn" data-category="acao">Ação / Aventura</button>
+            <button class="filter-btn" data-category="fps">FPS</button>
+        </div>
+
+        <div class="sort-container">
+            <label for="sortSelect"><i class="fa-solid fa-sort"></i> Ordenar por:</label>
+            <select id="sortSelect">
+                <option value="padrao">Destaques</option>
+                <option value="nota-desc">Maior Nota</option>
+                <option value="nome-asc">Nome (A-Z)</option>
+                <option value="ano-desc">Mais Recentes</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="games-grid" id="gamesGrid"></div>
+</section>
