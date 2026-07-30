@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelVerse - O Seu Portal de Jogos</title>index.html
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid =>-gamepad"></i> <span>PixelVerse</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar jogos...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore os Melhores Universos Gamer</h1>
+            <p>Análises, novidades e os jogos mais aclamados do momento em um só lugar.</p>
+            <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section id="destaques" class="container">
+        <h2 class="section-title">Em Destaque</h2>
+        <div class="featured-grid">
+            <div class="featured-card primary-news">
+                <div class="badge">Lançamento</div>
+                <h3>GTA VI: Tudo o que sabemos até agora</h3>
+                <p>Confira os detalhes sobre o mapa, personagens e novidades da Rockstar.</p>
+            </div>
+            <div class="featured-card secondary-news">
+                <div class="badge">E-Sports</div>
+                <h3>Mundial de League of Legends</h3>
+                <p>Acompanhe a cobertura completa da fase final do campeonato.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="container">
+        <h2 class="section-title">Catálogo de Jogos</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="rpg">RPG</button>
+            <button class="filter-btn" data-category="acao">Ação / Aventura</button>
+            <button class="filter-btn" data-category="fps">FPS</button>
+        </div>
+
+        <div class="games-grid" id="gamesGrid"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PixelVerse - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
